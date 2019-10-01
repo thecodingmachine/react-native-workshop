@@ -4,7 +4,7 @@
 
 </div>
 
-:waring: WORK IN PROGRESS :warning:
+:warning: WORK IN PROGRESS :warning:
 
 # TheCodingMachine React Native Workshop
 
