@@ -1,7 +1,5 @@
 <div align="center">
-    
-  <img src="App/Assets/Images/TOM-Legend.png" alt="Logo" width="100%">
-
+  <img src="App/Assets/Images/TOM-Workshop-Legend.png" alt="Logo" width="100%">
 </div>
 
 :warning: WORK IN PROGRESS :warning:
@@ -21,19 +19,19 @@ This application will follow this layout :
 
 * `App/Assets`: assets (image, audio files, ...) used by the application.
 * `App/Components`: presentational components
-    * `Components\CodeExample\Examples`: contains components for the `Examples` section.
-    * `Components\CodeExample\Animations`: contains components for the `Animations` section.
-    * `Components\CodeExample\Experiments`: contains components for the `Experiments` section.
+    * `Components/CodeExample/Examples`: contains components for the `Examples` section.
+    * `Components/CodeExample/Animations`: contains components for the `Animations` section.
+    * `Components/CodeExample/Experiments`: contains components for the `Experiments` section.
 * `App/Config`: configuration of the application
 * `App/Containers`: container components, i.e. the application's screens
-    * `Containers\CodeExample\Examples`: provides code example that can be implemented using the boilerplate like The login screen.
-    * `Containers\CodeExample\Animations`: contains simple or complex animations that can be used in a standard app.
-    * `Containers\CodeExample\Experiments`: contains screen to make experimental components
+    * `Containers/CodeExample/Examples`: provides code example that can be implemented using the boilerplate like The login screen.
+    * `Containers/CodeExample/Animations`: contains simple or complex animations that can be used in a standard app.
+    * `Containers/CodeExample/Experiments`: contains screen to make experimental components
 * `App/Navigators`: react navigation navigators
 * `App/Sagas`: redux sagas
-    * `Sagas\CodeExample\Examples`: Stores related to `Examples code` section.
-    * `Sagas\CodeExample\Animations`: Stores related to `Animations` section.
-    * `Sagas\CodeExample\Experiments`: Stores related to `Experiments` section.
+    * `Sagas/CodeExample/Examples`: Stores related to `Examples code` section.
+    * `Sagas/CodeExample/Animations`: Stores related to `Animations` section.
+    * `Sagas/CodeExample/Experiments`: Stores related to `Experiments` section.
 * `App/Services`: application services, e.g. API clients 
 * `App/Stores`: redux actions, reducers and stores
 * `App/Theme`: base styles for the application
@@ -42,15 +40,15 @@ This application will follow this layout :
 In this app you will find these 3 sections :
 * **Examples code**: 
     * A simple demo of an API call with error handling with redux, redux saga and axios
-    * A session login implementation
+    * A session login implementation (:construction:)
 * **Experiment**:
-    * The utilisation of 
-    * The utilisation of react-native-community/react-native-linear-gradient to see what is possible to do
-    * Navbar with extra central button
+    * The utilisation of svg shadow (:construction:)
+    * The utilisation of react-native-community/react-native-linear-gradient  (:construction:)
+    * Navbar with extra central button (:construction:)
 * **Animations**:
     * create input animation :
-        * bounce enter
-        * shake if error
+        * bounce enter (:construction:)
+        * shake if error (:construction:)
 
 
 # Requirements
