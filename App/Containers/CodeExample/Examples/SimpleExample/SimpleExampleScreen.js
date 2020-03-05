@@ -5,23 +5,23 @@ import { PropTypes } from 'prop-types'
 import ExampleActions from 'App/Stores/CodeExample/Examples/SimpleExample/Actions'
 import { liveInEurope } from 'App/Stores/CodeExample/Examples/SimpleExample/Selectors'
 import Style from './SimpleExampleScreenStyle'
+import { ApplicationStyles, Helpers, Metrics } from 'App/Theme'
 
-/**
- * This is an example of a container component.
- * Here we illustrate how to use redux with sagas
- * This screen displays information about a fake user.
- */
 class SimpleExampleScreen extends React.Component {
-  /**
-   * Before displaying the screen, we fetch a fake user
-   */
   componentDidMount() {
     this._fetchUser()
   }
 
   render() {
     return (
-      <View style={Style.container}>
+      <View
+        style={[
+          Helpers.fill,
+          Helpers.rowMain,
+          Metrics.mediumHorizontalMargin,
+          Metrics.mediumVerticalMargin,
+        ]}
+      >
         {this.props.userIsLoading ? (
           <ActivityIndicator size="large" color="#0000ff" />
         ) : (
@@ -39,7 +39,11 @@ class SimpleExampleScreen extends React.Component {
                 </Text>
               </View>
             )}
-            <Button onPress={() => this._fetchUser()} title="Refresh" />
+            <Button
+              style={ApplicationStyles.button}
+              onPress={() => this._fetchUser()}
+              title="Refresh"
+            />
           </View>
         )}
       </View>
