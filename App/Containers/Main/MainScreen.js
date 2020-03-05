@@ -18,7 +18,7 @@ const MENU = [
       },
       {
         title: 'Session authentication example',
-        screen: 'NotImplementedScreen',
+        screen: 'LoginBySessionScreen',
       },
     ],
   },

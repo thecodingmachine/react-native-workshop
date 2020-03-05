@@ -1,7 +1,8 @@
+import ApplicationStyles from "./ApplicationStyles";
 import Colors from './Colors'
 import Fonts from './Fonts'
 import Metrics from './Metrics'
 import Images from './Images'
 import Helpers from './Helpers'
 
-export { Colors, Fonts, Images, Metrics, Helpers }
+export { ApplicationStyles, Colors, Fonts, Images, Metrics, Helpers }

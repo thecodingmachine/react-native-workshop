@@ -1,11 +1,11 @@
 import React from 'react'
-import { View, Text, TouchableNativeFeedback } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import { Helpers, Metrics } from 'App/Theme'
 import NavigationService from 'App/Services/NavigationService'
 import { PropTypes } from 'prop-types'
 
 export const SectionItem = ({ item }) => (
-  <TouchableNativeFeedback onPress={() => NavigationService.navigate(item.screen)}>
+  <TouchableOpacity onPress={() => NavigationService.navigate(item.screen)}>
     <View
       style={[
         Helpers.fillRow,
@@ -17,7 +17,7 @@ export const SectionItem = ({ item }) => (
       <Text>{item.title}</Text>
       <Text>{'>'}</Text>
     </View>
-  </TouchableNativeFeedback>
+  </TouchableOpacity>
 )
 
 SectionItem.propTypes = {
