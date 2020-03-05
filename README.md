@@ -40,7 +40,7 @@ This application will follow this layout :
 In this app you will find these 3 sections :
 * **Examples code**: 
     * A simple demo of an API call with error handling with redux, redux saga and axios
-    * A session login implementation (:construction:)
+    * A session login implementation
 * **Experiment**:
     * The utilisation of svg shadow (:construction:)
     * The utilisation of react-native-community/react-native-linear-gradient  (:construction:)
@@ -53,7 +53,7 @@ In this app you will find these 3 sections :
 
 # Requirements
 
-Node 8 or greater is required. Development for iOS requires a Mac and Xcode 9 or up, and will target iOS 9 and up.
+Node 8.3 or greater is required. Development for iOS requires a Mac and Xcode 9 or up, and will target iOS 9 and up.
 
 You also need to install the dependencies required by React Native:
 * for Android development
