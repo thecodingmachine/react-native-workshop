@@ -1,5 +1,5 @@
 import { INITIAL_STATE } from './InitialState'
-import { createReducer } from 'reduxsauce'
+import { createReducer } from '@reduxjs/toolkit'
 import { LoginBySessionTypes } from './Actions'
 
 export const loginLoading = (state) => ({
@@ -8,14 +8,14 @@ export const loginLoading = (state) => ({
   loginError: null,
 })
 
-export const loginSuccess = (state, { token }) => ({
+export const loginSuccess = (state, { payload: { token } }) => ({
   ...state,
   token: token,
   loginLoading: false,
   loginError: null,
 })
 
-export const loginFailure = (state, { error }) => ({
+export const loginFailure = (state, { payload: { error } }) => ({
   ...state,
   token: null,
   loginLoading: false,

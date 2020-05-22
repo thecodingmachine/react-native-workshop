@@ -1,15 +1,16 @@
-import { createActions } from 'reduxsauce'
+import { makeCreators, makeTypes } from 'App/Stores/utils'
 
-const { Types, Creators } = createActions({
+const Types = {
   // Fetch user informations
-  fetchUser: null,
+  FETCH_USER: null,
   // The operation has started and is loading
-  fetchUserLoading: null,
+  FETCH_USER_LOADING: null,
   // User informations were successfully fetched
-  fetchUserSuccess: ['user'],
+  FETCH_USER_SUCCESS: (user) => ({ payload: { user } }),
   // An error occurred
-  fetchUserFailure: ['errorMessage'],
-})
+  FETCH_USER_FAILURE: (errorMessage) => ({ payload: { errorMessage } }),
+}
+const Creators = makeCreators(Types)
 
-export const ExampleTypes = Types
+export const ExampleTypes = makeTypes(Types)
 export default Creators

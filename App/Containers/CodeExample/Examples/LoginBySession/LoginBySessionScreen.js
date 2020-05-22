@@ -71,7 +71,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  login: (email, password) => dispatch(LoginBySessionActions.login(email, password)),
+  login: (email, password) => dispatch(LoginBySessionActions.LOGIN(email, password)),
 })
 
 export default connect(

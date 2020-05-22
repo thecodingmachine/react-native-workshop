@@ -9,16 +9,16 @@ import { simpleExampleService } from 'App/Services/CodeExample/Examples/SimpleEx
  * Feel free to remove it.
  */
 export function* fetchUser() {
-  yield put(ExampleActions.fetchUserLoading())
+  yield put(ExampleActions.FETCH_USER_LOADING())
 
   // Fetch user information from an API
   const user = yield call(simpleExampleService.fetchUser)
   console.log('user', user)
   if (user) {
-    yield put(ExampleActions.fetchUserSuccess(user))
+    yield put(ExampleActions.FETCH_USER_SUCCESS(user))
   } else {
     yield put(
-      ExampleActions.fetchUserFailure('There was an error while fetching user information.')
+      ExampleActions.FETCH_USER_FAILURE('There was an error while fetching user information.')
     )
   }
 }
