@@ -1,15 +1,16 @@
-import { createActions } from 'reduxsauce'
+import { makeCreators, makeTypes } from '../../../utils'
 
-const { Types, Creators } = createActions({
+const Types = {
   // Fetch user informations
-  login: ['email', 'password'],
+  LOGIN: (email, password) => ({ payload: { email, password } }),
   // The operation has started and is loading
-  loginLoading: null,
+  LOGIN_LOADING: null,
   // User informations were successfully fetched
-  loginSuccess: ['token'],
+  LOGIN_SUCCESS: (token) => ({ payload: { token } }),
   // An error occurred
-  loginFailure: ['error'],
-})
+  LOGIN_FAILURE: (error) => ({ payload: { error } }),
+}
+const Creators = makeCreators(Types)
 
-export const LoginBySessionTypes = Types
+export const LoginBySessionTypes = makeTypes(Types)
 export default Creators
